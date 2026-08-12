@@ -22,7 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\HackerRank1\HackerRank1.csproj" />
+    <ProjectReference Include="..\src\HackerRank1.Api\HackerRank1.Api.csproj" />
   </ItemGroup>
 
   <ItemGroup>
