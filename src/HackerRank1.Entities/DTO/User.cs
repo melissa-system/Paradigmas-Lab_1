@@ -1,4 +1,4 @@
-﻿namespace HackerRank1.DTO;
+namespace HackerRank1.DTO;
 
 public class User
 {

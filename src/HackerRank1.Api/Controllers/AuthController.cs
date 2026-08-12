@@ -1,4 +1,4 @@
-﻿using HackerRank1.DTO;
+using HackerRank1.DTO;
 using HackerRank1.Entities;
 using HackerRank1.Helpers;
 using HackerRank1.Services;
@@ -13,7 +13,7 @@ public record TokenResponse(string token);
 public class AuthController : Controller
 {
     private readonly IAuthenticationService authenticationService;
-    
+
     private readonly JwtSettings jwtSettings;
 
     public AuthController(IAuthenticationService _authenticationService, JwtSettings _jwtSettings)
@@ -24,7 +24,7 @@ public class AuthController : Controller
 
     [HttpPost("/login")]
     [AllowAnonymous]
-    public async Task<IActionResult> Login(User user) 
+    public async Task<IActionResult> Login(User user)
     {
         var validuser = await authenticationService.AuthenticateAsync(user.Email, user.Password);
         if (validuser is null)

@@ -1,4 +1,4 @@
-﻿namespace HackerRank1.Entities;
+namespace HackerRank1.Entities;
 
 public class JwtSettings
 {

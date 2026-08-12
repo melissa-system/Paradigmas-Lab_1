@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using LibraryService.WebAPI.Data;
@@ -19,7 +19,7 @@ namespace LibraryService.WebAPI.Controllers
             _librariesService = librariesService;
         }
 
-        [HttpGet]        
+        [HttpGet]
         public async Task<IActionResult> GetAll()
         {
             var libraries = await _librariesService.Get(null);
@@ -35,7 +35,7 @@ namespace LibraryService.WebAPI.Controllers
             return Ok(library);
         }
 
-        [HttpPost]        
+        [HttpPost]
         public async Task<IActionResult> Add(Library l)
         {
             await _librariesService.Add(l);

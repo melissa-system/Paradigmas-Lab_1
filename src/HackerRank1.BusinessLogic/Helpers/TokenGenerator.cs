@@ -1,4 +1,4 @@
-﻿using HackerRank1.DTO;
+using HackerRank1.DTO;
 using HackerRank1.Entities;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
@@ -9,7 +9,7 @@ namespace HackerRank1.Helpers;
 
 public static class TokenGenerator
 {
-    public static string GenerateToken(User user, JwtSettings jwtSettings) 
+    public static string GenerateToken(User user, JwtSettings jwtSettings)
     {
         var claims = new[]
         {
@@ -32,7 +32,7 @@ public static class TokenGenerator
             claims: claims,
             expires: DateTime.UtcNow.AddHours(1),
             signingCredentials: cred
-        );        
+        );
 
         return new JwtSecurityTokenHandler().WriteToken(token);
     }
