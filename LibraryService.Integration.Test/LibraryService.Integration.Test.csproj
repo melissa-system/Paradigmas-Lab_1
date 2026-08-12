@@ -25,8 +25,4 @@
     <ProjectReference Include="..\src\HackerRank1.Api\HackerRank1.Api.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
-  </ItemGroup>
-
 </Project>
