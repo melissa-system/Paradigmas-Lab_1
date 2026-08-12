@@ -7,8 +7,6 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace HackerRank1.Controllers;
 
-public record TokenResponse(string token);
-
 [ApiController]
 public class AuthController : Controller
 {
